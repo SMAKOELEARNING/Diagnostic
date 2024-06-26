@@ -60,3 +60,4 @@ This project uses the following technologies:
 
 <h2> Do not forget to give a star! ⭐🤗 </h2>
 # terratwist
+# smako-tt
