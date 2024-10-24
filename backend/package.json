@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon index.js"
-  },
+    "start": "concurrently \"npm run start:app\" \"npm run start:mongo\" \"npm run start:mongoScript:loop\"",
+    "start:app": "nodemon index.js",
+    "start:mongo": "mongod --dbpath /chemin/vers/ton/db",
+    "start:mongoScript": "node backend/scripts/processResponses.js"  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "moment": "^2.30.1",
     "mongoose": "^7.4.0",
+    "node-cron": "^3.0.3",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }

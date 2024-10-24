@@ -1,0 +1,25 @@
+/* Styles pour le conteneur global */
+.graph2-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px; /* Espacement de 2px entre chaque boîte */
+    width: 85vw;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Styles pour chaque graphique */
+  .graph-box {
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

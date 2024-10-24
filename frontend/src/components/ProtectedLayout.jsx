@@ -9,7 +9,7 @@ const ProtectedLayout = () => {
             {/* <Choix /> */}
         {/* </div> */}
         
-        <div className="main-content" style={{flex: '1' , width :'85vw', marginLeft: '15vw'}}>
+        <div className="main-content" style={{flex: '1' , width :'100vw' ,  margin:'0' , padding:'0'}}>
           <Outlet />
         </div>
         
